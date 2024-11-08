@@ -1,0 +1,348 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #f7f9fc;
+  color: #4f4f4f;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #031230;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+  height: 50px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #7f8e9c;
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown {
+  position: relative;
+}
+
+nav ul li .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #031230;
+  min-width: 160px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 2px;
+}
+
+nav ul li:hover .dropdown-content {
+  display: block;
+}
+
+nav ul li .dropdown-content a {
+  color: #f6f6f6;
+  padding: 1px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+}
+
+nav ul li .dropdown-content a:hover {
+  background-color: #778e8d;
+}
+
+/* Main Section */
+main {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #2d3c4f;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+  color: #031230;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: auto;
+  height: auto;
+}
+
+/* Service Section */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.service h3 {
+  font-size: 22px;
+  color: #031230;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Why Choose Us Section */
+.why-choose {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.benefit {
+  display: inline-block;
+  width: auto;
+  margin: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.benefit h3 {
+  font-size: 22px;
+  color: #031230;
+  margin-bottom: 15px;
+}
+
+.benefit p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Contact Us Button */
+.contact-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #030a13;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: #bbc3cc;
+}
+
+/* Contact Details Box */
+.contact-details {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: #d1deea;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  width: 300px;
+  z-index: 999;
+}
+.service-box {
+  background-color: #185943; /* Green background */
+  color: #031230; /* Dark blue text */
+  padding: 12px;
+  margin: 10px;
+  text-align: center;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-box a {
+  color: #031230; /* Dark blue text for the link */
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+
+.service-box:hover {
+  transform: translateY(-5px); /* Slight hover effect */
+}
+
+.service-box a:hover {
+  color: #000000; /* Text turns white on hover */
+}
+
+.service-box {
+  background-color: #bcf5dc; /* Green background */
+  color: #031230; /* Blue text */
+}
+.contact-details h3 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.contact-details p {
+  margin: 8px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .services {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .why-choose .benefit {
+    width: 100%;
+  }
+  
+}
+/* General Footer Styles */
+footer {
+  background-color: #031230;  /* Same background as header */
+  color: white;             /* Text color consistent with header */
+  padding: 20px 0;          /* Padding for top and bottom */
+  text-align: center;
+  font-size: 16px;          /* Font size */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Style for the social media links list */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 15px; /* Horizontal spacing between links */
+  position: relative; /* For positioning the separator */
+}
+
+.social-links a {
+  color: white;                /* Text color */
+  text-decoration: none;        /* No underline */
+  font-size: 16px;              /* Font size */
+  padding: 5px 5px;            /* Padding for better click area */
+  transition: color 0.3s ease;  /* Smooth hover effect */
+}
+
+.social-links a:hover {
+  color: #18c1db;              /* Hover color for links */
+}
+
+/* Create the separator between the links */
+.social-links li:not(:last-child)::after {
+  content: "|";                /* Use a pipe character as the separator */
+  position: absolute;
+  right: -10px;                /* Position it slightly outside the link */
+  color: white;                /* Separator color */
+  font-size: 20px;             /* Separator size */
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;    /* Stack the footer content on small screens */
+      text-align: center;        /* Center-align the footer items */
+  }
+
+  .social-links li {
+      margin: 5px 0;             /* Smaller margin on mobile */
+  }
+
+  .social-links li:not(:last-child)::after {
+      content: "";               /* Remove the separator on mobile */
+  }
+}
